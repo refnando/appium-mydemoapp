@@ -1,0 +1,109 @@
+#############################
+# Maven / Java
+#############################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+#############################
+# IntelliJ IDEA
+#############################
+.idea/
+*.iml
+*.ipr
+*.iws
+
+#############################
+# VS Code
+#############################
+.vscode/
+
+#############################
+# Eclipse / STS / NetBeans
+#############################
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+#############################
+# OS Files
+#############################
+.DS_Store
+Thumbs.db
+
+#############################
+# Environment files
+#############################
+src/test/resources/.env
+*.env
+.env.local
+.envrc
+
+#############################
+# Appium
+#############################
+*.mp4                # recordings
+*.png                # screenshots
+*.trace              # performance traces
+*.xcresult/          # iOS result bundles
+appium.log
+*.app/               # iOS app bundles (no subir .app al repo)
+*.ipa                # iOS builds
+*.apk                # Android builds
+*.aab                # Android bundles
+
+#############################
+# Allure Reports
+#############################
+allure-results/
+allure-report/
+allure-history/
+target/allure-results/history/
+target/allure-results/*
+target/allure-report/*
+target/surefire-reports/*
+
+#############################
+# Test output
+#############################
+test-output/
+reports/
+logs/
+screenshots/
+recordings/
+
+#############################
+# Temporary files
+#############################
+.tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+#############################
+# Build tools
+#############################
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+#############################
+# Kotlin artifacts
+#############################
+.kotlin/
