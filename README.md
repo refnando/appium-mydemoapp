@@ -65,6 +65,61 @@ appium-mydemoapp/
 ![Allure](https://img.shields.io/badge/Allure-2.x-FF7F00?style=for-the-badge&logo=allure&logoColor=white)
 
 ---
+## 📌 Requirements
+
+-   macOS\
+-   Xcode installed\
+-   Appium Server\
+-   NodeJS (for demo app build)\
+-   Java 17\
+-   Maven 3.9+
+---
+## 📱 Demo App Used (iOS Test App)
+
+This framework uses the official **Appium iOS Test App**, which is open
+source.
+
+### ▶️ Clone & Build the iOS Test App Yourself
+
+If you want to run the tests locally with Xcode:
+
+1.  Clone the repository:
+
+    ``` bash
+    git clone https://github.com/appium/ios-test-app.git
+    ```
+
+2.  Enter the project folder:
+
+    ``` bash
+    cd ios-test-app
+    ```
+
+3.  Install dependencies:
+
+    ``` bash
+    npm install
+    ```
+
+4.  Build the `.app` for simulator:
+
+    ``` bash
+    npm run build:ios
+    ```
+
+5.  Locate the built app:
+
+        ios-test-app/build/Release-iphonesimulator/UICatalog.app
+
+6.  Update your `.env` file in this framework:
+
+    ``` env
+    APP_PATH=/absolute/path/to/UICatalog.app
+    DEVICE_NAME=iPhone 15
+    PLATFORM_VERSION=17.0
+    ```
+
+---
 
 # 🧰 Installation
 
@@ -83,20 +138,6 @@ mvn clean install
 ```bash
 appium
 ```
-
----
-
-# ⚙ Environment Setup
-
-Create a `.env` file:
-
-```
-DEVICE_NAME=iPhone 15
-IOS_VERSION=16.4
-UDID=YOUR_SIMULATOR_UDID
-APP_PATH=/path/to/TestApp.app
-```
-
 ---
 
 # ▶ Running Tests
